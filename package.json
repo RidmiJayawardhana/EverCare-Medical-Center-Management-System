@@ -1,0 +1,14 @@
+{
+  "name": "evercare",
+  "version": "1.0.0",
+  "description": "EverCare Medical Center - Health Support System",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "seed": "cd server && npm run seed",
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm run preview\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
